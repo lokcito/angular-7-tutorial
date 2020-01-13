@@ -1,0 +1,36 @@
+<link rel="stylesheet" 
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" 
+  type="text/css" />
+<ul class="wrapper cf">
+	<li *ngFor="let product of products" class="product fl-l">
+  	<div class="container-prod">
+    	<div class="image"></div>
+      <div class="container-information">
+      	<div class="title">
+        	{{product.name}} | {{product.price}}
+            <a href="javascript:void(0)" class="more close"><i class="fa fa-times"></i></a>                
+        </div>
+        <div class="description">{{product.description}}</div>
+      </div>
+      <div class="sharing cf">
+      	<a href="https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/mattiabericchia/pen/myQNEV" class="fl-l" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/home?status=Example%20of%20UI%20for%20a%20product%20list%20made%20with%20jQuery%20and%20css%20tricks%20%40mattiabericchia%20https://codepen.io/mattiabericchia/pen/myQNEV" class="fl-l" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://plus.google.com/share?url=https://codepen.io/mattiabericchia/pen/myQNEV" class="fl-l" target="_blank"><i class="fa fa-google-plus"></i></a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://codepen.io/mattiabericchia/pen/myQNEV&title=UI%20Product%20list&summary=Example%20of%20UI%20for%20a%20product%20list%20made%20with%20jQuery%20and%20css%20tricks&source=https://www.linkedin.com/in/mattiabericchia" class="fl-l" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </div>
+      <div class="buttons cf">
+      	<a class="cart fl-l">
+          Comprar
+        </a>
+        <a href="javascript:void(0)" class="more fl-l">
+          <span>
+            <span><i class="fa fa-plus"></i></span>
+          </span>
+        </a>
+        <a href="javascript:void(0)" class="share fl-l">
+          <span><span><i class="fa fa-share-alt"></i></span></span>
+        </a>
+      </div>
+    </div>
+	</li>
+</ul>
